@@ -77,10 +77,10 @@ void Scene::initializeGL()
 
     m_program.bind();
     m_cameraPosLoc = m_program.uniformLocation( "cameraPos" );
-    m_program.setUniformValue( m_cameraPosLoc, cameraPos );
+    m_program.setUniformValue( m_cameraPosLoc, QVector3D( 0.0f, 0.0f, 3.0f ) );
 
     m_lightPosLoc = m_program.uniformLocation( "lightPos" );
-    m_program.setUniformValue( m_lightPosLoc, QVector3D( 0.0f, 0.0f, 50.0f ) );
+    m_program.setUniformValue( m_lightPosLoc, QVector3D( 30.0f, 30.0f, 30.0f ) );
     m_program.release();
 }
 

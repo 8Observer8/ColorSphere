@@ -41,7 +41,7 @@ void main()
 
     highp vec3 resultColor = clamp( colorRGB * 0.2 + colorRGB * 0.8 * diffuse + colorRGB * 0.4 * specular, 0.0, 1.0 );
 
-    //определяем вектор белого цвета
+    // Определяем вектор белого цвета
     highp vec4 one = vec4( 1.0, 1.0, 1.0, 1.0 );
 
     gl_FragColor = vec4( resultColor, 1.0 ) * one;
